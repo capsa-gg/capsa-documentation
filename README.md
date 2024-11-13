@@ -22,7 +22,7 @@ Before creating a PR, please run
 $ npm run fmt
 ```
 
-To run Prettier to format the code.
+to run Prettier to format the code.
 
 ### Build
 
@@ -34,16 +34,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true npm run deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Commits on the `main` branch are automatically deployed to GitHub Pages for hosting.
