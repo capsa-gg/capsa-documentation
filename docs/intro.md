@@ -5,9 +5,10 @@ sidebar_position: 1
 # Capsa
 
 > **capsa** _f_ (_genitive_ capsae); first declension
->   1. A box, case, holder, repository; especially a cylindrical container for books; bookcase.
+>
+> 1. A box, case, holder, repository; especially a cylindrical container for books; bookcase.
 
-*From [Wikitionary](https://en.wiktionary.org/wiki/capsa#Latin)*
+_From [Wikitionary](https://en.wiktionary.org/wiki/capsa#Latin)_
 
 ---
 
