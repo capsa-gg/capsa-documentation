@@ -20,7 +20,7 @@ Whenever a log is sent to the server with the correct [Protocol]("./protocol.md"
 - Start parsing the line per character, filling the `LineMetadata`
 - Stop when encountering a new-line character
 - Validate the `LineMetadata` structure
-	- In case there is an error: log to stderr
+  - In case there is an error: log to stderr
 - Update the `LogChunkMetadata` with the `LineMetadata`
 - Discard the `LineMetadata struct`
 

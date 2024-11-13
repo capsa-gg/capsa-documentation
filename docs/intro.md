@@ -12,19 +12,19 @@ TODO: Write
 
 ## Capsa features
 
-* Accessing logs in the cloud
+- Accessing logs in the cloud
 
 ## Impact on game code
 
-* TODO
+- TODO
 
 ## Running the Capsa web stack in the cloud
 
-* TODO
+- TODO
 
 ## What you need to start with Capsa
 
-* TODO
+- TODO
 
 ## Terminology
 

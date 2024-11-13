@@ -22,6 +22,6 @@ erDiagram
 	ADMINFRONTEND }|--|{ LOGSERVER : "fetches data"
 
 	USER }|--|{ ADMINFRONTEND : "uses"
-	ADMIN }|--|{ LOGSERVER : "manages" 
-	
+	ADMIN }|--|{ LOGSERVER : "manages"
+
 ```

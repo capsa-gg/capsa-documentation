@@ -15,7 +15,7 @@ mark:
   url: https://linkedin.com/in/markjawdoszak
   image_url: /img/authors/mark.jpg
   page:
-    permalink: '/mark'
+    permalink: "/mark"
   socials:
     github: MarkCompanion
     linkedin: markjawdoszak

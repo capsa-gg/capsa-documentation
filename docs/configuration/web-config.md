@@ -41,5 +41,5 @@ Reference: https://github.com/lucianonooijen/genesis/blob/master/server/config.e
 
 ## TODO
 
-* Support JWKs instead of regular JWTs
-* Determine whether v0.1 release will be have support for multiple clouds/mailers
+- Support JWKs instead of regular JWTs
+- Determine whether v0.1 release will be have support for multiple clouds/mailers

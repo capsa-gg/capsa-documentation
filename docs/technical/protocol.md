@@ -38,32 +38,36 @@ end
 ## POST `/api/logs/auth`
 
 Headers:
+
 ```
 X-Capsa-Plugin-Version: [version]
 ```
 
 Body: (TODO: more fields)
+
 ```json
 {
-	"key": "key from config",
-	"platform": "platform",
-	"type": "Server|Client|TODO: more?" 
+  "key": "key from config",
+  "platform": "platform",
+  "type": "Server|Client|TODO: more?"
 }
 ```
 
 Response (201):
+
 ```json
 {
-	"token": "token",
-	"log_id": "logid",
-	"link_web": "direct link to online log",
-	"expiry": "timestamp when the log session expires"
+  "token": "token",
+  "log_id": "logid",
+  "link_web": "direct link to online log",
+  "expiry": "timestamp when the log session expires"
 }
 ```
 
 ## POST `/api/logs/metadata`
 
 Headers:
+
 ```
 Authentication: Bearer [token]
 X-Capsa-Plugin-Version: [version]
@@ -72,14 +76,15 @@ X-Capsa-Plugin-Version: [version]
 Body: (TODO: define fields for connected server etc.)
 Links or metadata can be empty, but not both
 The additional metadata is stored with the timestamp of when the metadata was stored to the database.
+
 ```json
 {
-	"loglinks": {
-		"logid": "description"
-	},
-	"additionalMetadata": {
-		"key": "value"
-	}
+  "loglinks": {
+    "logid": "description"
+  },
+  "additionalMetadata": {
+    "key": "value"
+  }
 }
 ```
 
@@ -88,6 +93,7 @@ Response (201)
 ## POST `/api/logs/chunk`
 
 Headers:
+
 ```
 Authentication: Bearer [token]
 X-Capsa-Plugin-Version: [version]
