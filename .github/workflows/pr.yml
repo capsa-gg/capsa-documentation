@@ -1,9 +1,9 @@
 name: PullRequest
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    paths:
+      - "**"
 
 env:
   NODE_OPTIONS: --max-old-space-size=6144
