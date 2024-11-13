@@ -11,14 +11,11 @@ const config: Config = {
 
   // Set the production url of your site here
   url: "https://capsa.gg",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "capsa-gg", // Usually your GitHub org/user name.
-  projectName: "capsa-documentation", // Usually your repo name.
+  organizationName: "capsa-gg",
+  projectName: "capsa-documentation",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
@@ -43,8 +40,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/capsa-gg/capsa-documentation/tree/main/docs",
         },
         blog: {
@@ -53,8 +48,6 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/capsa-gg/capsa-documentation/tree/main/blog",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
@@ -69,7 +62,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "img/icon.png",
     navbar: {
       title: "Capsa",
@@ -80,7 +72,7 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
           label: "Documentation",
         },
