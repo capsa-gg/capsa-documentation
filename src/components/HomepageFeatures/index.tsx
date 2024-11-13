@@ -10,32 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Made for Unreal Engine',
+    Svg: require('@site/static/img/homepage/undraw_gaming.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Capsa is made specifically for Unreal Engine. 
+        No generic solution that tries to support every platform, but targetting one platform as best as possible.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Easy setup',
+    Svg: require('@site/static/img/homepage/undraw_server.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        You can get Capsa working within an hour.
+        Capsa is written to work without impact on game-code, with only small game code impact for additional features.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Deploy anywhere',
+    Svg: require('@site/static/img/homepage/undraw_cloud.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Capsa is written to be cloud agnostic. You can deploy it to any cloud platform, or on-premise.
+        The documentation contains instructions to deploy all major cloud platforms.
       </>
     ),
   },
