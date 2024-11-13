@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Log processing
 
-Whenever a log is sent to the server with the correct [Protocol]("./protocol.md"), it will run be processed with the following procedure.
+Whenever a log is sent to the server with the correct [Protocol](./protocol.md), it will run be processed with the following procedure.
 
 ## Metadata collected
 
@@ -24,7 +24,7 @@ Whenever a log is sent to the server with the correct [Protocol]("./protocol.md"
 - Update the `LogChunkMetadata` with the `LineMetadata`
 - Discard the `LineMetadata struct`
 
-After the procedure, the data is stored in the datavase and the blob of the data is stored without modification to the blob storage as described in [Systems]("./systems.md").
+After the procedure, the data is stored in the datavase and the blob of the data is stored without modification to the blob storage as described in [Systems](./systems.md).
 
 ## Structure for `LineMetadata`
 
