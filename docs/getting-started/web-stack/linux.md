@@ -41,6 +41,10 @@ TODO: cp
 
 TODO
 
+## Database migrations
+
+TODO
+
 ## Running the server as a service
 
 TODO

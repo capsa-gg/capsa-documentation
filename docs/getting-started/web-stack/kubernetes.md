@@ -36,11 +36,15 @@ _Change your directory with `cd deployment/helm/capsa`, which is used for the re
 
 ## Setting environment variables
 
-Run `cp values.yaml values.prod.yaml` to copy the values file to a file that can be edited, and is gitignored. Now change the environment variables in `values.prod.yaml` to the correct values.
+Run `cp values.yaml values.prod.yaml` to copy the values file to a file that can be edited, and is gitignored. Now change the environment variables in `values.prod.yaml` to the correct values as described in.
 
 :::danger Take proper care of your secrets
 Do not commit these changes to your repository, even if the repository is private. Secrets should never be checked into version control.
 :::
+
+## Database migrations
+
+TODO
 
 ## Allowing outside traffic
 
