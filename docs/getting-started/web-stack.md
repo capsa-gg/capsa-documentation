@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Installing the web stack
+# Installing the Web Stack
 
 Capsa is built on top of cloud-native technologies.
 
@@ -12,11 +12,15 @@ Often the easiest route is relying on a cloud vendor's App Service, where you ca
 
 The Capsa documentation covers three different routes:
 
-1. Installation using an **App Service** (recommended)
-2. Installation from scratch on a **Linux server**
-3. Installation using **Kubernetes**
+1. Installation using an [App Service](./web-stack-installation/app-service.md) (_recommended_)
+2. Installation from scratch on a [Linux server](./web-stack-installation/linux.md)
+3. Installation using [Kubernetes](./web-stack-installation/kubernetes.md)
 
 These can be found in the sidebar.
+
+:::tip Got stuck?
+If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
+:::
 
 ## Generating public/private keypair
 
