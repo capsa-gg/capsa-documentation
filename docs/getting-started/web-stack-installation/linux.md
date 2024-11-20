@@ -348,6 +348,10 @@ The key for sending logs from Unreal Engine is now visible on the homepage of th
 
 TODO: admin permissions
 
-:::success Capsa is installed
-Capsa is now installed correctly on your server!
+## Capsa is installed
+
+Congratulations! Capsa is now set up and running correctly!
+
+:::tip Need a helping hand?
+If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
 :::

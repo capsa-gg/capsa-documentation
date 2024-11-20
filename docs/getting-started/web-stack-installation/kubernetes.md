@@ -84,3 +84,7 @@ To see whether the deployment was successful, run:
 
 - **Server**: `curl https://<apihostname>/v1/status` and `curl https://<apihostname>/.well-known/jwks.json`
 - **Web**: `curl https://<webhostname>/auth/login`
+
+## Capsa is installed
+
+Congratulations! Capsa is now set up and running correctly!

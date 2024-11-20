@@ -4,4 +4,28 @@ sidebar_position: 1
 
 # Installing Capsa
 
-TODO: Write
+:::info Capsa is made with ease of installation in mind.
+You should be able to start setting up Capsa in the morning, and be done before lunch!
+:::
+
+So you're ready to install Capsa for your project? Great!
+
+There are a few steps in setting up Capsa. Namely: the web stack, and the Unreal Engine plugin.
+
+We recommend first setting up the web stack, so that when you add and configure the Capsa plugin, you can verify that everything is set up correctly on the Unreal Engine side.
+
+## Web stack installation
+
+There are various ways to set up the web stack. To read the guide on setting up the web stack, see [Installing the Web Stack](./web-stack.md).
+
+This guide will help you setting up the web stack and adding an environment that the Unreal Engine plugin can send data to.
+
+## Unreal Engine plugin installation
+
+The Unreal Engine plugin installation is very straight-forward: you add and enable the plugin, set a few configuration values, and Capsa will be installed!
+
+To read the guide on setting up the Unreal Engine plugin, see [Installing Unreal Engine plugin](./unreal-engine-plugin.md).
+
+:::tip Need a helping hand?
+If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
+:::

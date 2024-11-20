@@ -54,12 +54,12 @@ There should be no whitespace or other characters until the `:` character.
 
 The values of the log are as follows:
 
-| Field | Format | Notes |
-| - | - | - |
-| `<Timestamp>` | `YYYY.MM.DD-HH.MM.mmm` | In [Go time format](https://go.dev/src/time/format.go): `2006.01.02-15.04.05.000` |
-| `<Severity>` | `string` | In theory, any string should work, but officially, we only support `Fatal`, `Error`, `Warning`, `Log`, `Display`, `Verbose`, `VeryVerbose`
-| `<Category>` | `string`  | In theory, any string should work, but we advice to use no whitespaces, starting with a capital letter, preferably with the `Log` prefix, following Unreal Engine conventions.
-| `<LogContents>` | `string` | If the contents contain a `\n`, the rest of the line will be seen as a new line, which will be saved but not processed.
+| Field           | Format                 | Notes                                                                                                                                                                          |
+| --------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<Timestamp>`   | `YYYY.MM.DD-HH.MM.mmm` | In [Go time format](https://go.dev/src/time/format.go): `2006.01.02-15.04.05.000`                                                                                              |
+| `<Severity>`    | `string`               | In theory, any string should work, but officially, we only support `Fatal`, `Error`, `Warning`, `Log`, `Display`, `Verbose`, `VeryVerbose`                                     |
+| `<Category>`    | `string`               | In theory, any string should work, but we advice to use no whitespaces, starting with a capital letter, preferably with the `Log` prefix, following Unreal Engine conventions. |
+| `<LogContents>` | `string`               | If the contents contain a `\n`, the rest of the line will be seen as a new line, which will be saved but not processed.                                                        |
 
 For more info about log processing, see [Log processing](./log-processing.md).
 
@@ -94,7 +94,7 @@ X-Capsa-Plugin-Version: "v[semver]" (optional)
 }
 ```
 
-#### Response (non 2xx): 
+#### Response (non 2xx):
 
 ```json
 {
@@ -102,7 +102,6 @@ X-Capsa-Plugin-Version: "v[semver]" (optional)
   "details": "string|omitted if empty, contains additional details if applicable",
   "raw_error": "string|omitted if empty, raw server error, omitted in server non-dev mode"
 }
-
 ```
 
 ---
@@ -136,8 +135,7 @@ The additional metadata is stored with the timestamp of when the metadata was st
 
 No response body.
 
-
-#### Response (non 2xx): 
+#### Response (non 2xx):
 
 ```json
 {
@@ -145,7 +143,6 @@ No response body.
   "details": "string|omitted if empty, contains additional details if applicable",
   "raw_error": "string|omitted if empty, raw server error, omitted in server non-dev mode"
 }
-
 ```
 
 ---
@@ -172,7 +169,7 @@ No response body.
 
 No response body, sent if the log is shorter than 10 characters total.
 
-#### Response (non 2xx): 
+#### Response (non 2xx):
 
 ```json
 {
@@ -180,5 +177,4 @@ No response body, sent if the log is shorter than 10 characters total.
   "details": "string|omitted if empty, contains additional details if applicable",
   "raw_error": "string|omitted if empty, raw server error, omitted in server non-dev mode"
 }
-
 ```
