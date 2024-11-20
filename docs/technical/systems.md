@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Systems
 
-The various sytems making up the Capsa application
+The various sytems making up the Capsa application and terminology used in the documentation.
 
 ```mermaid
 erDiagram
@@ -14,7 +14,7 @@ erDiagram
 
 
 	LOGSERVER }|--|| POSTGRES : "stores metadata"
-	LOGSERVER }|--|| BLOBSTORAGE : "stores logs"
+	LOGSERVER }|--|| BLOBSTORAGE : "stores log chunks"
 	LOGSERVER }|--|| EMAILSERVICE : "sends transactional emails"
 
 	ADMINBACKEND }|--|{ LOGSERVER : "authenticates users"
