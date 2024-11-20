@@ -12,6 +12,6 @@ The configuration options of the Log Server, these can be set in a config.yml fi
 
 ## General
 
-| Field        | Example               | Description                          |
-| ------------ | --------------------- | ------------------------------------ |
-| api_hostname | http://localhost:5000 | The hostname that the server runs on |
+| Field        | Example                   | Description                          |
+| ------------ | ------------------------- | ------------------------------------ |
+| api_hostname | https://api.demo.capsa.gg | The hostname that the server runs on |
