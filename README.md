@@ -27,7 +27,7 @@ to run Prettier to format the code.
 ### Build
 
 ```
-$ npm run build build
+$ npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
