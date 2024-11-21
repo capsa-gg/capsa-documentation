@@ -1,0 +1,11 @@
+version: 2
+
+updates:
+  # Update npm dependencies in the repo root
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    target-branch: "main"
+    reviewers:
+      - "lucianonooijen"
