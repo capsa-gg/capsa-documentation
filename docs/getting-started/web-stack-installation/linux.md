@@ -101,7 +101,7 @@ Where the `ls` command should output the same as before.
 
 Run `cp /opt/capsa/server/config.example.yml /opt/capsa-server/config.yml`
 
-Now use your favourite code editor to change the values of the `config.yml` file. For instructions on this, see [Server Configuration]("../../configuration/server-config.md").
+Now use your favourite code editor to change the values of the `config.yml` file. For instructions on this, see [Server Configuration](../../configuration/server-config.md).
 
 :::info Check the port
 This guide assumes that port `5000` will be used to run the service.
