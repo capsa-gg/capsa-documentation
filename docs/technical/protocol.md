@@ -117,8 +117,9 @@ X-Capsa-Plugin-Version: "v[semver]" (optional)
 
 #### Body:
 
-Links or metadata can be empty, but not both
-The additional metadata is stored with the timestamp of when the metadata was stored to the database.
+Links or metadata can be empty, but not both.
+
+The additional metadata is stored with the timestamp of when the metadata was added to the database.
 
 ```json
 {
