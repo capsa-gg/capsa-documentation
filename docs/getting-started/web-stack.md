@@ -52,7 +52,11 @@ Make sure to keep these files safe, preferably deleting them after deployment. D
 
 ## Obtaining API Keys
 
-For transactional emails, Capsa uses Brevo. The free tier allows up to 300 emails per day, which should be sufficient for most installations of Capsa. After creating an account, you have to verify your domain before you can send emails from Brevo.
+For transactional emails, Capsa uses Brevo. The free tier allows up to 300 emails per day, which should be sufficient for most installations of Capsa.
+
+:::info Verify your Brevo account
+After creating an account, you have to verify your domain before you can send emails from Brevo.
+:::
 
 For storing log chunks, you can use any S3-compatible storage provider, as long as you have the following credentials:
 
@@ -63,10 +67,6 @@ blobstorage_key: string
 blobstorage_secret: string
 blobstorage_bucket: string
 ```
-
-## Adding the first admin user
-
-TODO
 
 ## Notes
 

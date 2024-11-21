@@ -4,14 +4,10 @@ sidebar_position: 3
 
 # Web app configuration
 
-TODO: Update
-
-## Server configuration
-
-The configuration options of the Log Server, these can be set in a config.yml file or with environment variables
+The configuration options of the Capsa Web App, these should be added as environment variables.
 
 ## General
 
-| Field        | Example                   | Description                          |
-| ------------ | ------------------------- | ------------------------------------ |
-| api_hostname | https://api.demo.capsa.gg | The hostname that the server runs on |
+| Field      | Example                   | Description                          |
+| ---------- | ------------------------- | ------------------------------------ |
+| SERVER_URL | https://api.demo.capsa.gg | The hostname that the server runs on |

@@ -114,7 +114,11 @@ cd /opt/capsa-server
 ./capsa jwk generate-keyset -w
 ```
 
-For this guide, we can use the `jwt.key`, and set the `jwk_private_key_path` instead of using the `jwk_private_key_base64` variable. For more details on the key generation, see [Generating Keypair](../web-stack.md#generating-publicprivate-keypair).
+For this guide, we can use the `jwk.key`, and set the `jwk_private_key_path` instead of using the `jwk_private_key_base64` variable. For more details on the key generation, see [Generating Keypair](../web-stack.md#generating-publicprivate-keypair).
+
+:::warning Take proper care of your secrets
+Make sure you keep the private key and other configuration variables secure!
+:::
 
 ## Database migrations
 
@@ -207,7 +211,7 @@ Environment=SERVER_URL=https://api.demo.capsa.gg
 WantedBy=multi-user.target
 ```
 
-:::tip Set the correct server url
+:::info Set the correct server url
 Make sure to change the `SERVER_URL` environment variable to the correct URL.
 :::
 
@@ -236,7 +240,7 @@ unlink /etc/nginx/sites-enabled/default
 
 Will install Nginx and disable the default website. We can now create a new configuration in `/etc/nginx/sites-available/capsa.conf` with the following configuration:
 
-:::tip Set the correct hostnames and ports
+:::info Set the correct hostnames and ports
 Make sure to change the `server_name` to your domain. If your Capsa installation runs on different ports, make sure to also update these.
 :::
 
@@ -335,6 +339,12 @@ cd /opt/capsa-server
 ```
 
 You will now receive an email that allows you to set your password.
+
+## Title and environment (optional)
+
+:::info You can do this with the web app
+Title and environment management is available in the web app as well.
+:::
 
 To add a title and environment, in our case "Capsa" and "Demo", run
 

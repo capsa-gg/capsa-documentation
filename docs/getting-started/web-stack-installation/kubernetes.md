@@ -44,7 +44,21 @@ Do not commit these changes to your repository, even if the repository is privat
 
 ## Database migrations
 
-TODO
+Before we can run the application, we need to run the database migrations.
+
+:::info Run migrations when updating Capsa
+Whenever you are updating Capsa, make sure to also run the database migrations.
+:::
+
+Migrate the database to the latest version by running the `capsa-server` image with the environment variables available nad performing the following command:
+
+```sh
+./capsa db migrate -d up
+```
+
+This should give log output with `database migrated successfully`.
+
+You can automate this command to run on each deployment if you prefer.
 
 ## Allowing outside traffic
 
@@ -84,6 +98,18 @@ To see whether the deployment was successful, run:
 
 - **Server**: `curl https://<apihostname>/v1/status` and `curl https://<apihostname>/.well-known/jwks.json`
 - **Web**: `curl https://<webhostname>/auth/login`
+
+## Create your admin user
+
+You can create the first admin user by running the `capsa-server` image with the environment variables available nad performing the following command:
+
+```sh
+./capsa user add -e youremail -f FirstName -l LastName
+```
+
+TODO: admin permissions
+
+If the mailing provider is set up correctly, you will receive a link to set up a password. In the web app you can add additional user accounts and configure titles and environments.
 
 ## Capsa is installed
 

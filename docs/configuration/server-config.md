@@ -4,45 +4,41 @@ sidebar_position: 2
 
 # Server configuration
 
-TODO: Update
+The configuration options of the Log Server, these can be set in a config.yml file or with environment variables.
 
 :::info Using environment variables?
 The `Field` in the table below is used for configuring the server application using `config.yml`. If you are using environment variables, change the name of the `Field` into uppercase (`api_port` to `API_PORT`) and store all values as strings.
 :::
 
-## Server configuration
-
-The configuration options of the Log Server, these can be set in a config.yml file or with environment variables.
-
 ## General
 
 All of the fields are required, unless stated in the description
 
-| Field                  | Example                   | Description                                                                  |
-| ---------------------- | ------------------------- | ---------------------------------------------------------------------------- |
-| development            | false                     | Enable development mode, recommended to be off                               |
-| api_port               | 5000                      | Port to run the REST API on, guides use port 5000                            |
-| api_protocol           | https                     | The protocol that the webapp runs on, should be https in production          |
-| api_hostname           | api.demo.capsa.gg         | The hostname that the server runs on, http/https prefix will be stripped     |
-| webapp_hostname        | https://web.demo.capsa.gg | The hostname that the webapp runs on, for generating email links             |
-| jwk_private_key_path   | jwk.key                   | Path to signing private key, must be set if jwk_private_key_base64 is empty  |
-| jwk_private_key_base64 | `cat jwk.key \| base64`   | Private key in base64, must be set if jwk_private_key_path is empty          |
-| db_host                | localhost                 | Database hostname                                                            |
-| db_port                | 5432                      | Database port                                                                |
-| db_name                | capsadb                   | Database name                                                                |
-| db_user                | capsauser                 | Database user                                                                |
-| db_pass                | -                         | Database password for user                                                   |
-| db_ssl                 | false                     | Indicate if ssl should be used when connecting to the database               |
-| blobstorage_endpoint   | https://ams3.example.com  | Endpoint for S3-compatible blob storage, used for storing log chunks         |
-| blobstorage_region     | ams3                      | Reguion for blob storage                                                     |
-| blobstorage_key        | -                         | Key for accessing blob storage                                               |
-| blobstorage_secret     | -                         | Secret for accessing blob storage                                            |
-| blobstorage_bucket     | capsa-chunks              | Bucket name to store log chunks in                                           |
-| email_sender_name      | Capsa Logserver           | The 'From' name for sent emails                                              |
-| email_sender_email     | no-reply@capsa.gg         | The 'From' email address for sent emails                                     |
-| brevo_api_key          | -                         | The API key from Brevo to send transactional emails                          |
-| log_retention_days     | 30                        | Amount of days after which logs should be deleted                            |
-| log_max_duration_hours | 48                        | Max log session duration (should be less than max dedicated server lifetime) |
+| Field                  | Example                  | Description                                                                     |
+| ---------------------- | ------------------------ | ------------------------------------------------------------------------------- |
+| development            | false                    | Enable development mode, recommended to be off                                  |
+| api_port               | 5000                     | Port to run the REST API on, guides use port 5000                               |
+| api_protocol           | https                    | The protocol that the webapp runs on, should be https in production             |
+| api_hostname           | api.demo.capsa.gg        | The hostname that the server runs on, http/https prefix will be stripped        |
+| webapp_hostname        | web.demo.capsa.gg        | The hostname that the webapp runs on, for generating email links, without https |
+| jwk_private_key_path   | jwk.key                  | Path to signing private key, must be set if jwk_private_key_base64 is empty     |
+| jwk_private_key_base64 | `cat jwk.key \| base64`  | Private key in base64, must be set if jwk_private_key_path is empty             |
+| db_host                | localhost                | Database hostname                                                               |
+| db_port                | 5432                     | Database port                                                                   |
+| db_name                | capsadb                  | Database name                                                                   |
+| db_user                | capsauser                | Database user                                                                   |
+| db_pass                | -                        | Database password for user                                                      |
+| db_ssl                 | false                    | Indicate if ssl should be used when connecting to the database                  |
+| blobstorage_endpoint   | https://ams3.example.com | Endpoint for S3-compatible blob storage, used for storing log chunks            |
+| blobstorage_region     | ams3                     | Reguion for blob storage                                                        |
+| blobstorage_key        | -                        | Key for accessing blob storage                                                  |
+| blobstorage_secret     | -                        | Secret for accessing blob storage                                               |
+| blobstorage_bucket     | capsa-chunks             | Bucket name to store log chunks in                                              |
+| email_sender_name      | Capsa Logserver          | The 'From' name for sent emails                                                 |
+| email_sender_email     | no-reply@capsa.gg        | The 'From' email address for sent emails                                        |
+| brevo_api_key          | -                        | The API key from Brevo to send transactional emails                             |
+| log_retention_days     | 30                       | Amount of days after which logs should be deleted                               |
+| log_max_duration_hours | 48                       | Max log session duration (should be less than max dedicated server lifetime)    |
 
 Note: you should either set `jwk_private_key_path` or `jwk_private_key_base64`, the server will not start if you set neither or both.
 
