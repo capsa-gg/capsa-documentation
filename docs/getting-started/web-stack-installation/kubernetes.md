@@ -101,13 +101,11 @@ To see whether the deployment was successful, run:
 
 ## Create your admin user
 
-You can create the first admin user by running the `capsa-server` image with the environment variables available nad performing the following command:
+You can create the first admin user by running the `capsa-server` image with the environment variables available and performing the following command:
 
 ```sh
-./capsa user add -e youremail -f FirstName -l LastName
+./capsa user add -e youremail -f FirstName -l LastName -r Admin
 ```
-
-TODO: admin permissions
 
 If the mailing provider is set up correctly, you will receive a link to set up a password. In the web app you can add additional user accounts and configure titles and environments.
 

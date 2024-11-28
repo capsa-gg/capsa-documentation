@@ -60,6 +60,24 @@ ingress:
         path:
           prefix: /
 region: ams
+jobs:
+  - image:
+      registry: capsa-gg
+      registry_type: GHCR
+      repository: capsa-server
+      tag: latest # REPLACEME with the latest tag
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    kind: PRE_DEPLOY
+    name: db-migrations
+    run_command: ./capsa db migrate -d up
+    envs:
+      - key: API_PORT
+        scope: RUN_AND_BUILD_TIME
+        value: "5000"
+      - key: API_HOSTNAME
+        scope: RUN_AND_BUILD_TIME
+        value: localhost
 services:
   - name: api
     instance_count: 1
@@ -73,6 +91,13 @@ services:
       tag: latest # REPLACEME with the latest tag
     health_check:
       http_path: /v1/status
+    envs:
+      - key: API_PORT
+        scope: RUN_AND_BUILD_TIME
+        value: ${_self.PRIVATE_PORT}
+      - key: API_HOSTNAME
+        scope: RUN_AND_BUILD_TIME
+        value: ${_self.PUBLIC_URL}
     alerts:
       - operator: GREATER_THAN
         rule: CPU_UTILIZATION
@@ -86,74 +111,68 @@ services:
         rule: RESTART_COUNT
         value: 2
         window: FIVE_MINUTES
-    envs:
-      - key: DEVELOPMENT
-        scope: RUN_TIME
-        value: "false"
-      - key: API_PORT
-        scope: RUN_AND_BUILD_TIME
-        value: ${_self.PRIVATE_PORT}
-      - key: JWK_PRIVATE_KEY_BASE64
-        scope: RUN_AND_BUILD_TIME
-        value: |-
-          <REPLACEME>
-      - key: API_PROTOCOL
-        scope: RUN_AND_BUILD_TIME
-        value: https
-      - key: API_HOSTNAME
-        scope: RUN_AND_BUILD_TIME
-        value: ${_self.PUBLIC_URL}
-      - key: WEBAPP_HOSTNAME
-        scope: RUN_AND_BUILD_TIME
-        value: web.demo.capsa.gg # REPLACEME
-      - key: DB_HOST
-        scope: RUN_AND_BUILD_TIME
-        value: ${psql.HOSTNAME}
-      - key: DB_USER
-        scope: RUN_AND_BUILD_TIME
-        value: ${psql.USERNAME}
-      - key: DB_PASS
-        scope: RUN_AND_BUILD_TIME
-        value: ${psql.PASSWORD}
-      - key: DB_PORT
-        scope: RUN_AND_BUILD_TIME
-        value: ${psql.PORT}
-      - key: DB_NAME
-        scope: RUN_AND_BUILD_TIME
-        value: ${psql.DATABASE}
-      - key: DB_SSL
-        scope: RUN_AND_BUILD_TIME
-        value: "true"
-      - key: EMAIL_SENDER_NAME
-        scope: RUN_AND_BUILD_TIME
-        value: Capsa
-      - key: EMAIL_SENDER_EMAIL
-        scope: RUN_AND_BUILD_TIME
-        value: <REPLACEME>
-      - key: BREVO_API_KEY
-        scope: RUN_AND_BUILD_TIME
-        value: <REPLACEME>
-      - key: BLOBSTORAGE_ENDPOINT
-        scope: RUN_AND_BUILD_TIME
-        value: https://ams3.digitaloceanspaces.com # REPLACEME
-      - key: BLOBSTORAGE_REGION
-        scope: RUN_AND_BUILD_TIME
-        value: ams3 # REPLACEME
-      - key: BLOBSTORAGE_KEY
-        scope: RUN_AND_BUILD_TIME
-        value: <REPLACEME>
-      - key: BLOBSTORAGE_SECRET
-        scope: RUN_AND_BUILD_TIME
-        value: <REPLACEME>
-      - key: BLOBSTORAGE_BUCKET
-        scope: RUN_AND_BUILD_TIME
-        value: <REPLACEME>
-      - key: LOG_RETENTION_DAYS
-        scope: RUN_AND_BUILD_TIME
-        value: "30"
-      - key: LOG_MAX_DURATION_HOURS
-        scope: RUN_AND_BUILD_TIME
-        value: "48"
+envs:
+  - key: DEVELOPMENT
+    scope: RUN_TIME
+    value: "false"
+  - key: JWK_PRIVATE_KEY_BASE64
+    scope: RUN_AND_BUILD_TIME
+    value: |-
+      <REPLACEME>
+  - key: API_PROTOCOL
+    scope: RUN_AND_BUILD_TIME
+    value: https
+  - key: WEBAPP_HOSTNAME
+    scope: RUN_AND_BUILD_TIME
+    value: web.demo.capsa.gg # REPLACEME
+  - key: DB_HOST
+    scope: RUN_AND_BUILD_TIME
+    value: ${psql.HOSTNAME}
+  - key: DB_USER
+    scope: RUN_AND_BUILD_TIME
+    value: ${psql.USERNAME}
+  - key: DB_PASS
+    scope: RUN_AND_BUILD_TIME
+    value: ${psql.PASSWORD}
+  - key: DB_PORT
+    scope: RUN_AND_BUILD_TIME
+    value: ${psql.PORT}
+  - key: DB_NAME
+    scope: RUN_AND_BUILD_TIME
+    value: ${psql.DATABASE}
+  - key: DB_SSL
+    scope: RUN_AND_BUILD_TIME
+    value: "true"
+  - key: EMAIL_SENDER_NAME
+    scope: RUN_AND_BUILD_TIME
+    value: Capsa
+  - key: EMAIL_SENDER_EMAIL
+    scope: RUN_AND_BUILD_TIME
+    value: <REPLACEME>
+  - key: BREVO_API_KEY
+    scope: RUN_AND_BUILD_TIME
+    value: <REPLACEME>
+  - key: BLOBSTORAGE_ENDPOINT
+    scope: RUN_AND_BUILD_TIME
+    value: https://ams3.digitaloceanspaces.com # REPLACEME
+  - key: BLOBSTORAGE_REGION
+    scope: RUN_AND_BUILD_TIME
+    value: ams3 # REPLACEME
+  - key: BLOBSTORAGE_KEY
+    scope: RUN_AND_BUILD_TIME
+    value: <REPLACEME>
+  - key: BLOBSTORAGE_SECRET
+    scope: RUN_AND_BUILD_TIME
+    value: <REPLACEME>
+  - key: BLOBSTORAGE_BUCKET
+    scope: RUN_AND_BUILD_TIME
+    value: <REPLACEME>
+  - key: LOG_RETENTION_DAYS
+    scope: RUN_AND_BUILD_TIME
+    value: "30"
+  - key: LOG_MAX_DURATION_HOURS
+    scope: RUN_AND_BUILD_TIME
+    value: "48"
 ```
 
 A few notes on this App Spec:
@@ -171,13 +190,13 @@ It is recommended to mark variables as encrypted when the app is running correct
 
 DigitalOcean will automatically generate a development database with the spec above. This is fine for using Capsa in a smalls setting, but it might be good to use a managed database instead, in which case you need to change the database environemnt variables to point to that database.
 
-### Database migrations
+### Database migrations (optional)
 
-:::info Run migrations when updating Capsa
-Whenever you are updating Capsa, make sure to also run the database migrations.
+:::info Migrations are running automatically in App Service
+Under the `jobs` key, you can see the database migration job, this will run before every deploy.
+
+If you prefer to do the database migrations manually, follow the below instructions, otherwise, skip this section.
 :::
-
-If you call the API endpoints now, they will fail, this is because the database is not not yet migrated. You could set up a job in the App Spec to do this, but it's easier to do it locally.
 
 Convert the App Spec environment variables to a local yml configuration ([Server Config reference](../../configuration/server-config.md)). You can find the connection parameters for the database in the DigitalOcean app.
 
@@ -187,17 +206,13 @@ Use the `capsa` binary (used for private key generation) to run the migrations:
 ./capsa db migrate -d up
 ```
 
-Another way is to change the Run Command for the `api` service, and then after the migrations you can change it back.
-
 ### Create an admin user
 
 To create an admin user, run:
 
 ```sh
-./capsa user add -e youremail -f FirstName -l LastName
+./capsa user add -e youremail -f FirstName -l LastName -r Admin
 ```
-
-TODO: admin permissions
 
 Don't open the email you receive just yet, we first need to set up the web app!
 

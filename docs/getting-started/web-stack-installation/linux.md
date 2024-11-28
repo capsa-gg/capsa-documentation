@@ -335,7 +335,7 @@ To create an admin user, run
 
 ```sh
 cd /opt/capsa-server
-./capsa user add -e youremail -f FirstName -l LastName
+./capsa user add -e youremail -f FirstName -l LastName -r Admin
 ```
 
 You will now receive an email that allows you to set your password.
@@ -355,8 +355,6 @@ cd /opt/capsa-server
 ```
 
 The key for sending logs from Unreal Engine is now visible on the homepage of the web app, or when running `./capsa env list`.
-
-TODO: admin permissions
 
 ## Capsa is installed
 
