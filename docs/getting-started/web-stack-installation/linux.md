@@ -321,7 +321,7 @@ certbot renew --dry-run
 To see whether the deployment was successful, run the following commands with your domains:
 
 - **Server**: `curl https://api.demo.capsa.gg/v1/status` and `curl https://api.demo.capsa.gg/.well-known/jwks.json`
-- **Web**: `curl https://web.demo.capsa.gg/auth/login`
+- **Web**: `curl https://web.demo.capsa.gg/api/status`
 
 :::warning This is not a Linux security guide
 This guide does not cover securing your Linux server, as this is different per cloud provider.

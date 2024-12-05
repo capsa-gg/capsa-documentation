@@ -251,7 +251,7 @@ services:
       repository: capsa-web
       tag: latest # REPLACEME with the latest tag
     health_check:
-      http_path: /auth/login
+      http_path: /api/status
     alerts:
       - operator: GREATER_THAN
         rule: CPU_UTILIZATION
@@ -283,7 +283,7 @@ Change the App Spec and save it under [Your Capsa Web App] > Settings > App Spec
 To see whether the deployment was successful, run the following commands with your domains:
 
 - **Server**: `curl https://api.demo.capsa.gg/v1/status` and `curl https://api.demo.capsa.gg/.well-known/jwks.json`
-- **Web**: `curl https://web.demo.capsa.gg/auth/login`
+- **Web**: `curl https://web.demo.capsa.gg/api/status`
 
 You can now open the link in the email you have received to set up your password and continue to manage your Capsa installation from the web app.
 

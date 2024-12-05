@@ -97,7 +97,7 @@ helm install capsa . -n capsa -f values.prod.yaml
 To see whether the deployment was successful, run:
 
 - **Server**: `curl https://<apihostname>/v1/status` and `curl https://<apihostname>/.well-known/jwks.json`
-- **Web**: `curl https://<webhostname>/auth/login`
+- **Web**: `curl https://<webhostname>/api/status`
 
 ## Create your admin user
 
