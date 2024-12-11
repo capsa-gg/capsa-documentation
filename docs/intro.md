@@ -26,7 +26,9 @@ TODO: Remove this notification
 
 Capsa makes Unreal Engine logs great to work with. No more sharing logs in Jira, Slack or Discord, but stored in the cloud, with link sharing built-in, filtering logs, switching to server logs and much more.
 
-As everyone knows, logs in Unreal Engine are a pain in the _redacted_ to work with, especially when collaborating with a larger team. Capsa makes this part not just bearable, but a great developer experience, so you can focus on what you're best at: making games!
+As everyone knows, logs in Unreal Engine are a pain in the ~~redacted~~ to work with, especially when collaborating with a larger team.  Capsa makes this part not just bearable, but a great developer experience, so you can focus on what you're best at: making games!
+
+Capsa is made to extend Unreal Engine and does not try to replace it's functionality. The web stack is built to be cloud agnostic and can be deployed anywhere.
 
 ## Capsa features
 

@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Capsa",
-  tagline: "An open-source logging solution for Unreal Engine",
+  tagline: "An non-intrusive open-source logging solution for Unreal Engine",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here

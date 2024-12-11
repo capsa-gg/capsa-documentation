@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A ground-breaking Unreal Engine log solution for teams collaborating on games"
+      description="A ground-breaking, non-intrusive, open-source Unreal Engine remote logging solution for teams collaborating on games"
     >
       <HomepageHeader />
       <main>

@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # App Service deployment
 
-:::tip One-click deployment
-TODO: Support this
-:::
-
 The App Service deployment is the most straight-forward way of deploying Capsa. Therefore, it is the recommended approach for deploying Capsa in the cloud.
 
 App Services allow you to deploy Docker images to a container, without the hassle of managing servers yourself, or messing with Kubernetes configurations.

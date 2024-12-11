@@ -14,8 +14,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/homepage/undraw_gaming.svg").default,
     description: (
       <>
-        Capsa is made specifically for Unreal Engine. No generic solution that tries to support every platform, but
-        targetting one platform as best as possible.
+        Capsa is unintrusive and extends Unreal Engine rather than trying to replace functionality. No generic solution
+        that tries to support every platform, but targetting one platform as best as possible.
       </>
     ),
   },
@@ -24,8 +24,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/homepage/undraw_server.svg").default,
     description: (
       <>
-        You can get Capsa working within an hour. Capsa is written to work without impact on game-code, with only small
-        game code impact for additional features.
+        You can get Capsa working within an hour. Capsa is written to work out-of-the-box without changing any game
+        code, with a few opt-in features with little game code changes.
       </>
     ),
   },
@@ -34,8 +34,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/homepage/undraw_cloud.svg").default,
     description: (
       <>
-        Capsa is written to be cloud agnostic. You can deploy it to any cloud platform, or on-premise. The documentation
-        contains instructions to deploy all major cloud platforms.
+        Capsa is open-source and written to be cloud agnostic/cloud native. You can deploy it to any cloud platform, or
+        on-premise. The documentation contains instructions to deploy all major cloud platforms.
       </>
     ),
   },
