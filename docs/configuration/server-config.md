@@ -10,7 +10,7 @@ The configuration options of the Log Server, these can be set in a config.yml fi
 The `Field` in the table below is used for configuring the server application using `config.yml`. If you are using environment variables, change the name of the `Field` into uppercase (`api_port` to `API_PORT`) and store all values as strings.
 :::
 
-## General
+## Required fields
 
 All of the fields are required, unless stated in the description
 
@@ -41,6 +41,14 @@ All of the fields are required, unless stated in the description
 | log_max_duration_hours | 48                       | Max log session duration (should be less than max dedicated server lifetime)    |
 
 Note: you should either set `jwk_private_key_path` or `jwk_private_key_base64`, the server will not start if you set neither or both.
+
+## Optional fields
+
+These fields can be set, but are not required to run the application.
+
+| Field      | Example | Description                                                           |
+| ---------- | ------- | --------------------------------------------------------------------- |
+| sentry_dsn | -       | Optional Sentry DNS, if this value is set, Sentry will be initialized |
 
 ## Example yaml
 
