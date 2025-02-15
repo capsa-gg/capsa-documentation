@@ -15,4 +15,4 @@ Apart from building a great product for teams using Unreal Engine, we also love 
 
 You can expect articles coming out about the development of Capsa, sharing our findings that can be of help to others, whether that is with Unreal Engine, or with any of the other aspects of Capsa.
 
-![Capsa Logo](./logo-by.png)
+![Capsa Logo](../logo-by.png)

@@ -3,7 +3,13 @@ update:
   permalink: /update
   description: Capsa project updates
 
+development:
+  label: Development
+  permalink: /development
+  description: Capsa development
+
+
 release:
   label: Release
   permalink: /release
-  description: Capsa rekeases
+  description: Capsa releases
