@@ -5,7 +5,7 @@ authors: [luciano]
 tags: [development]
 ---
 
-Let's start by saying that Unreal Engine is a great tool that can be used to build great games, from indie to AAA. No wonder it's so widely used for such a wide variety of games (as well as for television and movies, it's even used by some government agencies). 
+Let's start by saying that Unreal Engine is a great tool that can be used to build great games, from indie to AAA. No wonder it's so widely used for such a wide variety of games (as well as for television and movies, it's even used by some government agencies).
 
 With Companion Group, our focus is on the multiplayer/online aspects of game development. And although Unreal Engine is great to work with, we have noticed a few shortcomings in tooling.
 
