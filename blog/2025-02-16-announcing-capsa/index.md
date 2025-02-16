@@ -18,7 +18,7 @@ To read more about why we built Capsa, read [Why we built Capsa](../2025-02-15-w
 ## What makes Capsa great
 
 - **Logs with syntax highlighting and sharable links**: find what you need and share a direct link
-- **Filter, search, and link logs**: Filter by log category or severity to only see the logs you need
+- **Filter, search, and link logs**: filter by log category or severity to only see the logs you need
 - **Merged client-server logs**: out-of-the-box client/server linked logs
 - **Easy-to-use management**: manage titles, environments and users in the web panel
 - **Minimal setup, no code changes**: works out of the box without game code impact
