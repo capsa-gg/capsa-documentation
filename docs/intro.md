@@ -16,12 +16,6 @@ Let's discover **Capsa in less than 5 minutes**.
 
 When you're ready to get started, you can check out **[installing Capsa for your project](./getting-started/getting-started.md)**.
 
-:::warning Capsa is not released yet!
-Capsa is not yet released, we are still working on this. Though if you have found this, feel free to reach out for early access.
-
-TODO: Remove this notification
-:::
-
 ## TL;DR:
 
 Capsa makes Unreal Engine logs great to work with. No more sharing logs in Jira, Slack or Discord, but stored in the cloud, with link sharing built-in, filtering logs, switching to server logs and much more.
@@ -45,7 +39,7 @@ Capsa is made to extend Unreal Engine and does not try to replace it's functiona
 
 Oh, and every part of Capsa is open-source! So don't worry about vendor lock-ins.
 
-### Coming soon
+### On the roadmap
 
 - **Unified log view**: read client and server logs at the same time
 - **One-click deployment**: one-click deployment to DigitalOcean apps for the web stack
@@ -75,7 +69,9 @@ We've built Capsa in a way to make it as easy as possible to set up. All you nee
 If you are using Unreal Engine and have a server to host the Capsa web stack on with permissions to add a few DNS records, you have all you need to get started with Capsa.
 
 :::tip Need a helping hand?
-If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
+If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support.
+
+We are happy to help you getting Capsa up and running!
 :::
 
 ## Terminology
