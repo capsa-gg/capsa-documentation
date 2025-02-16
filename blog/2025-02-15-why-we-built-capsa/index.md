@@ -29,7 +29,7 @@ Capsa is this solution. So in short, Capsa is a result of "scratching our own it
 
 ## Open-source
 
-We know this is a solution we need but we also wanted to make Capsa available for others to use without requiring tons of changes to the game code or a lot of maintenance overhead. It might have been possible to build a SaaS-offering out of Capsa, but this is not the direction we wanted to take, so we have chosen a copyleft open-source licence instead.
+We know this is a solution we need but we also wanted to make Capsa available for others to use without requiring tons of changes to the game code or a lot of maintenance overhead. It might have been possible to build a SaaS-offering out of Capsa, but this is not the direction we wanted to take, so we have chosen a copyleft open-source licence instead. The web-stack is AGPL-3.0 licenced. The Unreal Engine plugin does have a permissive MIT-license, so you can incorporate it into your game without any licencing issues.
 
 By choosing this approach to licencing, everyone can use Capsa however they like, make changes if they want to, but the product cannot be incorporated into a proprietary offering without sharing the changes made back to the other users of Capsa.
 
