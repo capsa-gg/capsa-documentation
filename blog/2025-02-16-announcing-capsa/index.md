@@ -22,7 +22,7 @@ To read more about why we built Capsa, read [Why we built Capsa](../2025-02-15-w
 - **Merged client-server logs**: out-of-the-box client/server linked logs
 - **Easy-to-use management**: manage titles, environments and users in the web panel
 - **Minimal setup, no code changes**: works out of the box without game code impact
-- **Cloud-native, so host anywhere**: deploy in a way that makes sense for your organization
+- **Cloud-native, so host anywhere**: start in the morning and have Capsa ready to use before lunch
 - **Optimized for performance**: little impact on game performance and no huge cloud bills
 - **Open-source**: web stack AGPL3.0 and UE plugin MIT licenced, so no vendor lock-in
 - **Dark-mode support**: don't burn your eyes by enabling dark-mode in the web panel
