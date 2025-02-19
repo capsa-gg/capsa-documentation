@@ -8,7 +8,7 @@ The Capsa plugin works with Unreal Engine 5.4 and later and works with the engin
 
 ## Adding the plugin to your game
 
-To add the plugin to your game, check which version your Capsa web stack is running (this is shown in the bottom left of the web panel), download the corresponding plugin version from [here](https://github.com/capsa-gg/capsa-plugin-unreal-engine/tags). 
+To add the plugin to your game, check which version your Capsa web stack is running (this is shown in the bottom left of the web panel), download the corresponding plugin version from [here](https://github.com/capsa-gg/capsa-plugin-unreal-engine/tags).
 
 When you have the .zip file, extract this into a newly created `.\Plugins\Capsa` directory.
 
@@ -16,7 +16,7 @@ After you have added the plugin files, compile and launch the editor. You can no
 
 ## Configuring the plugin
 
-The plugin must be configured to point to your Capsa API server to store the logs. You can configure the plugins either in the Unreal Editor, or in the .ini files directly. 
+The plugin must be configured to point to your Capsa API server to store the logs. You can configure the plugins either in the Unreal Editor, or in the .ini files directly.
 
 Regardless of which method you choose, you will need at least the `CapsaServerURL` and `CapsaEnvironmentKey` set to get the Capsa plugin to work, as documented in [Plugin Configuration](../configuration/plugin-config.md).
 
@@ -88,16 +88,19 @@ Enabling logging in Shipping comes with risks, it is recommended you research an
 To enable logging in shipping builds, you need to modify your projects `<ProjectName>.target.cs` file.
 
 In the constructor add:
+
 ```c#
 bUseLoggingInShipping = true;
 ```
 
 Additionally, if building from source, also add:
+
 ```c#
 BuildEnvironment = TargetBuildEnvironment.Unique
 ```
 
 Or if building from precompiled binaries, add:
+
 ```c#
 bOverrideBuildEnvironment = true;
 ```
