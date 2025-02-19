@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Plugin configuration
 
+_This page contains documentation about configuration options, to read the installation guide, click [here](../getting-started/getting-started.md)_
+
 The configuration options of the Unreal Engine plugin. All options can be overwritten based on the environment and build target.
 
 | Field                        | Required | Default                       | Description                                                                                                   |
@@ -52,4 +54,29 @@ bWriteToDiskPlain=True
 bWriteToDiskCompressed=True
 ```
 
+## Overriding environment variables
+
+In case your setup requires overwrites of certain configuration values for different build types, you can use UAT ini-overrides.
+
+Overrides take the form of `-ini:Engine:[SettingsKey]:Variable=Value`. So for example to overwrite the `CapsaEnvironmentKey`:
+
+```ps1
+.\Path\To\RunUAT.bat BuildCookRun <BuildArgs> -ini:Engine:[/Script/CapsaCore.CapsaSettings]:CapsaEnvironmentKey=<YourEnvironmentKey>
+```
+
 ## Enabling verbose logging
+
+If, for debugging purposes, you desire to have more verbose logging for certain categories, this can be done in the `DefaultEngine.ini` file, under the `[Core.Log]` section. For example:
+
+```ini
+[Core.Log]
+; This is used for Capsa plugin development
+LogCapsaCore=All
+LogCapsaLog=All
+; This increases verbosity of UE to generate more log lines for testing
+LogNet=Verbose
+LogInit=All
+LogConfig=Verbose
+PIE=Verbose
+Cmd=All
+```

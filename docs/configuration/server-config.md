@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Server configuration
 
+_This page contains documentation about configuration options, to read the installation guide, click [here](../getting-started/getting-started.md)_
+
 The configuration options of the Log Server, these can be set in a config.yml file or with environment variables.
 
 :::info Using environment variables?

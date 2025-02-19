@@ -40,9 +40,8 @@ TODO: add video
 Capsa v0.1 is now available. We’d love your feedback—whether you’ve tried it or just have thoughts on the concept.
 
 - **Docs & Setup**: [capsa.gg](https://capsa.gg/docs/getting-started/)
-- **GitHub**: [github.com/capsa-gg/capsa](https://github.com/capsa-gg/capsa)
+- **GitHub**: [github.com/capsa-gg](https://github.com/capsa-gg)
 - **Video guides for setup**: TODO: setup and usage guide videos
-- **Integration demo game**: TODO: demo game integrated with Capsa
-- **Feedback & Questions**: Email [luciano@companiongroup.io](mailto:luciano@companiongroup.io)
+- **Feedback & Questions**: [luciano@companiongroup.io](mailto:luciano@companiongroup.io)
 
 If this sounds useful, give the repo a ⭐ on GitHub and let us know what you think!
