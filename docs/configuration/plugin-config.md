@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Plugin configuration
 
-_This page contains documentation about configuration options, to read the installation guide, click [here](../getting-started/getting-started.md)_
+_This page contains documentation about configuration options, to read the installation guide, click [here](../getting-started/index.md)_
 
 The configuration options of the Unreal Engine plugin. All options can be overwritten based on the environment and build target.
 

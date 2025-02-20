@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Web app configuration
 
-_This page contains documentation about configuration options, to read the installation guide, click [here](../getting-started/getting-started.md)_
+_This page contains documentation about configuration options, to read the installation guide, click [here](../getting-started/index.md)_
 
 The configuration options of the Capsa Web App, these should be added as environment variables.
 
