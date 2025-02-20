@@ -14,7 +14,7 @@ _From [Wikitionary](https://en.wiktionary.org/wiki/capsa#Latin)_
 
 Let's discover **Capsa in less than 5 minutes**.
 
-When you're ready to get started, you can check out **[installing Capsa for your project](./getting-started/getting-started.md)**.
+When you're ready to get started, you can check out **[installing Capsa for your project](./getting-started/index.md)**.
 
 ## TL;DR:
 
