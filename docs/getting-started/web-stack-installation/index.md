@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Installing the Web Stack
+# Setting up the Web Stack
 
 Capsa is built on top of cloud-native technologies.
 
@@ -12,9 +12,9 @@ Often the easiest route is relying on a cloud vendor's App Service, where you ca
 
 The Capsa documentation covers three different routes:
 
-1. Installation using an [App Service](./web-stack-installation/app-service.md) (_recommended_)
-2. Installation from scratch on a [Linux server](./web-stack-installation/linux.md)
-3. Installation using [Kubernetes](./web-stack-installation/kubernetes.md)
+1. Installation using an [App Service](./app-service.md) (_recommended_)
+2. Installation from scratch on a [Linux server](./linux.md)
+3. Installation using [Kubernetes](./kubernetes.md)
 
 These can be found in the sidebar.
 

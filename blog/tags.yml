@@ -8,7 +8,6 @@ development:
   permalink: /development
   description: Capsa development
 
-
 release:
   label: Release
   permalink: /release

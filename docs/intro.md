@@ -14,13 +14,7 @@ _From [Wikitionary](https://en.wiktionary.org/wiki/capsa#Latin)_
 
 Let's discover **Capsa in less than 5 minutes**.
 
-When you're ready to get started, you can check out **[installing Capsa for your project](./getting-started/getting-started.md)**.
-
-:::warning Capsa is not released yet!
-Capsa is not yet released, we are still working on this. Though if you have found this, feel free to reach out for early access.
-
-TODO: Remove this notification
-:::
+When you're ready to get started, you can check out **[installing Capsa for your project](./getting-started/index.md)**.
 
 ## TL;DR:
 
@@ -45,7 +39,7 @@ Capsa is made to extend Unreal Engine and does not try to replace it's functiona
 
 Oh, and every part of Capsa is open-source! So don't worry about vendor lock-ins.
 
-### Coming soon
+### On the roadmap
 
 - **Unified log view**: read client and server logs at the same time
 - **One-click deployment**: one-click deployment to DigitalOcean apps for the web stack
@@ -66,7 +60,7 @@ Some additional features require _additions_ but not _refactors_ of game code. A
 
 If you're building games, you don't want to spend days setting up cloud infrastructure. That is why Capsa is made to be cloud-native and super easy to set up and cheap to host. During development, you should be able to self-host Capsa for less than $50 per month.
 
-We offer various guides for [Setting up the web stack](./getting-started/web-stack.md), to host the Capsa server and web app in a way that makes sense for your team.
+We offer various guides for [Setting up the web stack](./getting-started/web-stack-installation/index.md), to host the Capsa server and web app in a way that makes sense for your team.
 
 ## What you need to start with Capsa
 
@@ -75,7 +69,9 @@ We've built Capsa in a way to make it as easy as possible to set up. All you nee
 If you are using Unreal Engine and have a server to host the Capsa web stack on with permissions to add a few DNS records, you have all you need to get started with Capsa.
 
 :::tip Need a helping hand?
-If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
+If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support.
+
+We are happy to help you getting Capsa up and running!
 :::
 
 ## Terminology
@@ -90,3 +86,9 @@ Some important terminology used in the Capsa documentation
 | Log         | A complete log from a client                                                   |
 | Log chuck   | A part of the log sent during flushing                                         |
 | Log session | Same as "Log"                                                                  |
+
+---
+
+## Installation video guides
+
+TODO

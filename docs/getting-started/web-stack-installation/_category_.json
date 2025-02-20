@@ -1,9 +1,5 @@
 {
-  "label": "Web Stack",
+  "label": "Web Stack setup",
   "position": 4,
-  "collapsible": true,
-  "link": {
-    "type": "generated-index",
-    "description": "Install the Capsa Web Stack"
-  }
+  "collapsible": true
 }

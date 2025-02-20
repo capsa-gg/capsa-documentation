@@ -16,7 +16,7 @@ We recommend first setting up the web stack, as you need a running Capsa Web Sta
 
 ## Web stack installation
 
-There are various ways to set up the web stack. To read the guide on setting up the web stack, see [Installing the Web Stack](./web-stack.md).
+There are various ways to set up the web stack. To read the guide on setting up the web stack, see [Installing the Web Stack](./web-stack-installation/index.md).
 
 This guide will help you setting up the web stack and adding an environment that the Unreal Engine plugin can send data to.
 
