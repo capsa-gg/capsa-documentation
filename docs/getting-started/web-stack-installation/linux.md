@@ -90,7 +90,7 @@ cp -r /opt/capsa/web/public /opt/capsa-web/public
 ls /opt/capsa-web
 ```
 
-Where the `ls` command should output the same as before.
+Where the `ls` command should output the same as before plus a new `public` directory.
 
 ## Setting the configuration
 
@@ -289,7 +289,7 @@ systemctl restart nginx
 We can use certbot to automatically generate a free TLS certificate.
 
 :::info Make sure your domain is configured
-This step requires your server IP to be set as A-records for the desired domain names. Without this, no TLS certificates can be reacted
+This step requires your server IP to be set as A-records for the desired domain names. Without this, no TLS certificates can be validated.
 :::
 
 Install the required packages with
