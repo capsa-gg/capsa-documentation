@@ -6,6 +6,8 @@ sidebar_position: 2
 
 Capsa can be deployed to any Linux server environment. The Linux deployment is building Capsa locally and not using the generated binaries from GitHub.
 
+To build the web stack from source, you will need more resources on your Linux machine than just _running_ the web stack, you can most likely downscale after building to save on compute.
+
 :::info This guide is written for Ubuntu
 This guide is made with **Ubuntu 24.04 LTS** with no software installed on it yet. Any distro should work however, so feel free to adopt this guide for your prefered Linux distribution.
 
