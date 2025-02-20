@@ -47,7 +47,7 @@ This guide will use `/opt/capsa` as a working directory. Before cloning, run `cd
 git clone https://github.com/capsa-gg/capsa.git capsa
 ```
 
-Will clone the repository to `/opt/capsa`.
+Will clone the repository to `/opt/capsa`. In `/opt/capsa`, run `git tag` to find the latest tag, which you can then `git checkout v<tag>` to use a tagged release, which is recommended.
 
 ## Building the project
 
@@ -244,7 +244,7 @@ Make sure to change the `server_name` to your domain. If your Capsa installation
 
 # API Server
 server {
-    listen 80 http2;
+    listen 80;
     # listen [::]:80; # Uncomment for IPv6
     server_name api.demo.capsa.gg;
 
@@ -261,7 +261,7 @@ server {
 
 # Web app
 server {
-    listen 80 http2;
+    listen 80;
     # listen [::]:80; # Uncomment for IPv6
     server_name web.demo.capsa.gg;
 
@@ -310,6 +310,24 @@ You will be asked for some details before the request for the certificates is ma
 ```sh
 certbot renew --dry-run
 ```
+
+## Enabling HTTP2
+
+After you have installed the TLS certificates using Certbot, you can open the `/etc/nginx/sites-available/capsa.conf` file.
+
+In here, change the lines containing
+
+```conf
+listen 443 ssl; # managed by Certbot
+```
+
+To 
+
+```conf
+listen 443 ssl http2; # managed by Certbot
+```
+
+After that, `systemctl restart nginx`.
 
 ## Validate deployment
 

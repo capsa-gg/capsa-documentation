@@ -22,6 +22,13 @@ These can be found in the sidebar.
 If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
 :::
 
+## Prerequisites
+
+To install the Capsa web stack, you need the following prerequisites:
+- PostgreSQL database instance
+- Access key and secret to an S3-compatible blob storage bucket
+- API key for Brevo to send transactional emails (see [Obtaining API keys](#obtaining-api-keys))
+
 ## Generating public/private keypair
 
 Capsa uses a private/public keypair to generate the JWTs forr both the Unreal Engine client and the users of the Web panel.

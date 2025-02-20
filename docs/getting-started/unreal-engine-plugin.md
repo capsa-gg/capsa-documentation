@@ -6,6 +6,11 @@ sidebar_position: 5
 
 The Capsa plugin works with Unreal Engine 5.4 and later and works with the engine built from source as well as the precompiled engine, though the source-engine is necessary to make dedicated server builds.
 
+## Prerequisites
+
+- Capsa web stack deployed (`CapsaServerURL`)
+- Capsa Environment Key (`CapsaEnvironmentKey`)
+
 ## Adding the plugin to your game
 
 To add the plugin to your game, check which version your Capsa web stack is running (this is shown in the bottom left of the web panel), download the corresponding plugin version from [here](https://github.com/capsa-gg/capsa-plugin-unreal-engine/tags).
