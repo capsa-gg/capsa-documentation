@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
-# Installing Unreal Engine plugin
+# Unreal Engine plugin setup
 
 The Capsa plugin works with Unreal Engine 5.4 and later and works with the engine built from source as well as the precompiled engine, though the source-engine is necessary to make dedicated server builds.
 
@@ -107,4 +107,4 @@ bOverrideBuildEnvironment = true;
 
 ## Ready for use!
 
-The Capsa plugin is now configured! In the [Using Capsa](#) TODO section you can find out more about using Capsa.
+The Capsa plugin is now configured! In the sidebar, under "Using Capsa" you can find various guides for using the plugin with Unreal Engine, like [Linking logs](../using-capsa/linking-logs.md), [Adding metadata](../using-capsa/adding-metadata.md) and [Integrating plugin](../using-capsa/integrating-plugin.md).

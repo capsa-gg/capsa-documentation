@@ -18,7 +18,7 @@ Please make sure you have the following configured:
 
 - `kubectl` installed on your machine with the `current-context` pointing to the cluster you want to deploy to
 - The [capsa web stack repository](https://github.com/capsa-gg/capsa) cloned to disk, a tagged release is recommended
-- A private/public keyset as described in [Generating Keypair](../web-stack.md#generating-publicprivate-keypair)
+- A private/public keyset as described in [Generating Keypair](./index.md#generating-publicprivate-keypair)
 
 ## Preparation
 

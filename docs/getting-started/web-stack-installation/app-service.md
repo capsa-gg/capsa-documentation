@@ -24,7 +24,7 @@ For this guide, we are setting up `api.demo.capsa.gg` and `web.demo.capsa.gg`.
 
 ## Generating the secrets
 
-Before we proceed, we should make sure that we have all secrets required to configure the server. For generating the private/public keys, see [Generating Keypair](../web-stack.md#generating-publicprivate-keypair). Don't delete the Capsa just yet, we will need it in a bit.
+Before we proceed, we should make sure that we have all secrets required to configure the server. For generating the private/public keys, see [Generating Keypair](./index.md#generating-publicprivate-keypair). Don't delete the Capsa just yet, we will need it in a bit.
 
 We will be using the base64 encoded private key, as the DigitalOcean App Platform does not support mounting files to disk. We can do this with `cat jwk.kwy | base64`.
 

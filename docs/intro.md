@@ -60,7 +60,7 @@ Some additional features require _additions_ but not _refactors_ of game code. A
 
 If you're building games, you don't want to spend days setting up cloud infrastructure. That is why Capsa is made to be cloud-native and super easy to set up and cheap to host. During development, you should be able to self-host Capsa for less than $50 per month.
 
-We offer various guides for [Setting up the web stack](./getting-started/web-stack.md), to host the Capsa server and web app in a way that makes sense for your team.
+We offer various guides for [Setting up the web stack](./getting-started/web-stack-installation/index.md), to host the Capsa server and web app in a way that makes sense for your team.
 
 ## What you need to start with Capsa
 
@@ -86,3 +86,9 @@ Some important terminology used in the Capsa documentation
 | Log         | A complete log from a client                                                   |
 | Log chuck   | A part of the log sent during flushing                                         |
 | Log session | Same as "Log"                                                                  |
+
+---
+
+## Installation video guides
+
+TODO

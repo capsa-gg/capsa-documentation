@@ -114,7 +114,7 @@ cd /opt/capsa-server
 ./capsa jwk generate-keyset -w
 ```
 
-For this guide, we can use the `jwk.key`, and set the `jwk_private_key_path` instead of using the `jwk_private_key_base64` variable. For more details on the key generation, see [Generating Keypair](../web-stack.md#generating-publicprivate-keypair).
+For this guide, we can use the `jwk.key`, and set the `jwk_private_key_path` instead of using the `jwk_private_key_base64` variable. For more details on the key generation, see [Generating Keypair](./index.md#generating-publicprivate-keypair).
 
 :::warning Take proper care of your secrets
 Make sure you keep the private key and other configuration variables secure!
