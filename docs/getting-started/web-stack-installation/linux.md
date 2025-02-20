@@ -37,13 +37,6 @@ go version
 node --version
 ```
 
-, so make sure that the folders are created:
-
-```sh
-mkdir -p /opt/capsa-server
-mkdir -p /opt/capsa-web
-```
-
 ## Cloning the repo
 
 This guide will use `/opt/capsa` as a working directory. Before cloning, run `cd /opt`.
