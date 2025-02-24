@@ -128,4 +128,4 @@ to
 
 ## Ready for use!
 
-The Capsa plugin is now configured! In the sidebar, under "Using Capsa" you can find various guides for using the plugin with Unreal Engine, like [Linking logs](../using-capsa/linking-logs.md), [Adding metadata](../using-capsa/adding-metadata.md) and [Integrating plugin](../using-capsa/integrating-plugin.md).
+The Capsa plugin is now configured!
