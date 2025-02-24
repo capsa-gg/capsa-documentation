@@ -53,17 +53,11 @@ After setting the correct configuration, compile your project.
 
 ### Overriding environment variables
 
-In case your setup requires overwrites of certain configuration values for different build types, there are two options.
+In case your setup requires overwrites of certain configuration values for different build types, there are several options. You can add configuration files that override the base config, as explained [here](https://dev.epicgames.com/documentation/en-us/unreal-engine/configuration-files-in-unreal-engine#configurationfilehierarchy) in the Unreal Engine documentation, but this might not be the best fit for your use case.
 
-You can add configuration files that override the base config, as explained [here](https://dev.epicgames.com/documentation/en-us/unreal-engine/configuration-files-in-unreal-engine#configurationfilehierarchy) in the Unreal Engine documentation.
+Alternatively, with some engine changes as documented in [this article](https://medium.com/disruptivegames/config-injection-during-unreal-engine-4-builds-87e02b7ecc09), you can use UAT ini-overrides. Overrides take the form of `-ini:Engine:[SettingsKey]:Variable=Value`. You can then add these override arguments into your build scripts or CI-configuration.
 
-Alternatively, you can use UAT ini-overrides. Overrides take the form of `-ini:Engine:[SettingsKey]:Variable=Value`. So for example to overwrite the `CapsaEnvironmentKey`:
-
-```ps1
-.\Path\To\RunUAT.bat BuildCookRun <BuildArgs> -ini:Engine:[/Script/CapsaCore.CapsaSettings]:CapsaEnvironmentKey=<YourEnvironmentKey>
-```
-
-You can add these override arguments into your build scripts or CI-configuration.
+In the future, we might add other ways to override the environment variables to make this process easier.
 
 ## Configuring logging verbosity
 
