@@ -110,6 +110,28 @@ Or if building from precompiled binaries, add:
 bOverrideBuildEnvironment = true;
 ```
 
+After adding this, make sure to set the `WITH_CAPSA_LOG_ENABLED` definition to `1` in your project, using either 
+
+```cs
+GlobalDefinitions.Add("WITH_CAPSA_LOG_ENABLED=1");
+``` 
+
+or by changing the source code of the plugin from 
+
+```cpp
+#ifndef WITH_CAPSA_LOG_ENABLED
+#define WITH_CAPSA_LOG_ENABLED !(UE_BUILD_SHIPPING || UE_BUILD_TEST)
+#endif
+```
+
+to 
+
+```cpp
+#ifndef WITH_CAPSA_LOG_ENABLED
+#define WITH_CAPSA_LOG_ENABLED 1
+#endif
+```
+
 ## Ready for use!
 
 The Capsa plugin is now configured! In the sidebar, under "Using Capsa" you can find various guides for using the plugin with Unreal Engine, like [Linking logs](../using-capsa/linking-logs.md), [Adding metadata](../using-capsa/adding-metadata.md) and [Integrating plugin](../using-capsa/integrating-plugin.md).
