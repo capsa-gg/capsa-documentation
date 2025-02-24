@@ -32,7 +32,7 @@ Capsa is made to extend Unreal Engine and does not try to replace it's functiona
 - **Link sharing**: you can share links to specific views, so others see exactly what you see
 - **Title/environment management**: categorize logs in a way that makes sense
 - **Linked logs**: find related logs, for example reading logs of the server you are connected to
-- **Metadata**: store any metadata you want for your logs, fe. user ids or game modes
+- **Unified log view**: read client and server logs at the same time
 - **Dark mode support**: don't burn your eyes reading logs in the web app
 - **Automatic log deletion**: set a threshold after when logs need to be removed
 - **Performance**: properly written code that won't impact game performance
@@ -41,7 +41,7 @@ Oh, and every part of Capsa is open-source! So don't worry about vendor lock-ins
 
 ### On the roadmap
 
-- **Unified log view**: read client and server logs at the same time
+- **Metadata**: store any metadata you want for your logs, fe. user ids or game modes
 - **One-click deployment**: one-click deployment to DigitalOcean apps for the web stack
 - **MFA**: further secure access to the Capsa web app with multi-factor authentication
 - **Log comments**: place comments on logs to add context
