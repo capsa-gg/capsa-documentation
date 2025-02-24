@@ -45,8 +45,8 @@ CapsaServerURL=<your Capsa API server, without the protocol prefix>
 Protocol=https
 CapsaEnvironmentKey=<your default Capsa environment key>
 bUseCompression=True
-bWriteToDiskPlain=True
-bWriteToDiskCompressed=True
+bWriteToDiskPlain=False
+bWriteToDiskCompressed=False
 ```
 
 After setting the correct configuration, compile your project.
