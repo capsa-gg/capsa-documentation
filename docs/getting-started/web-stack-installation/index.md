@@ -25,6 +25,7 @@ If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongr
 ## Prerequisites
 
 To install the Capsa web stack, you need the following prerequisites:
+
 - PostgreSQL database instance
 - Access key and secret to an S3-compatible blob storage bucket
 - API key for Brevo to send transactional emails (see [Obtaining API keys](#obtaining-api-keys))

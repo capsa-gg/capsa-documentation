@@ -104,13 +104,13 @@ Or if building from precompiled binaries, add:
 bOverrideBuildEnvironment = true;
 ```
 
-After adding this, make sure to set the `WITH_CAPSA_LOG_ENABLED` definition to `1` in your project, using either 
+After adding this, make sure to set the `WITH_CAPSA_LOG_ENABLED` definition to `1` in your project, using either
 
 ```cs
 GlobalDefinitions.Add("WITH_CAPSA_LOG_ENABLED=1");
-``` 
+```
 
-or by changing the source code of the plugin from 
+or by changing the source code of the plugin from
 
 ```cpp
 #ifndef WITH_CAPSA_LOG_ENABLED
@@ -118,7 +118,7 @@ or by changing the source code of the plugin from
 #endif
 ```
 
-to 
+to
 
 ```cpp
 #ifndef WITH_CAPSA_LOG_ENABLED

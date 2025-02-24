@@ -321,7 +321,7 @@ In here, change the lines containing
 listen 443 ssl; # managed by Certbot
 ```
 
-To 
+To
 
 ```conf
 listen 443 ssl http2; # managed by Certbot
