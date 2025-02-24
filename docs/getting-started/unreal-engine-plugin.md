@@ -31,7 +31,7 @@ After adding the Capsa plugin configuration, make sure to commit the plugin file
 
 Compile and launch the editor after you have added the plugin files.
 
-Go to `ProjectSettings`->`Engine`->`Capsa`. In here you can configure the plugin.
+Go to `ProjectSettings`->`Engine`->`Capsa Settings`. In here you can configure the plugin. After making changes, you might have to restart the editor for the changes to take effect.
 
 ### DefaultEngine configuration file
 
