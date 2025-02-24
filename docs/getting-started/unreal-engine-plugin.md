@@ -17,7 +17,7 @@ To add the plugin to your game, check which version your Capsa web stack is runn
 
 When you have the .zip file, extract this into a newly created `.\Plugins\Capsa` directory.
 
-After you have added the plugin files, compile and launch the editor. You can now start configuring the plugin.
+After you have added the plugin files, compile and launch the editor, then enable the plugin. You can now start configuring the plugin.
 
 ## Configuring the plugin
 
