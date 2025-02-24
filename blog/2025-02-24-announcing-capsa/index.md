@@ -33,7 +33,7 @@ Capsa extends rather than replaces Unreal Engine functionality so you don't have
 
 ## See Capsa in action
 
-TODO: add video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hmLBERUPXJk?si=wrK4hzr-WXeAqWIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Try Capsa Today
 
@@ -41,7 +41,7 @@ Capsa v0.1 is now available. We’d love your feedback—whether you’ve tried 
 
 - **Docs & Setup**: [capsa.gg](https://capsa.gg/docs/getting-started/)
 - **GitHub**: [github.com/capsa-gg](https://github.com/capsa-gg)
-- **Video guides for setup**: TODO: setup and usage guide videos
+- **Video guides for setup**: [YouTube Playlist](https://youtube.com/playlist?list=PL9RL1sP7V5kYQ_gtJaBacAklts1p_lIk_&si=kUWiI_kyQZfWGIkJ)
 - **Feedback & Questions**: [luciano@companiongroup.io](mailto:luciano@companiongroup.io)
 
 If this sounds useful, give the repo a ⭐ on GitHub and let us know what you think!

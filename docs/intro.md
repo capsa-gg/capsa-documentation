@@ -89,6 +89,6 @@ Some important terminology used in the Capsa documentation
 
 ---
 
-## Installation video guides
+## Setup and usage guide playlist
 
-TODO
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=bf7LO5T5jHON_0wH&amp;list=PL9RL1sP7V5kYQ_gtJaBacAklts1p_lIk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

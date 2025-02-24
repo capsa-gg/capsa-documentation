@@ -30,6 +30,6 @@ To read the guide on setting up the Unreal Engine plugin, see [Installing Unreal
 If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
 :::
 
-## Setup video guide 
+## Setup and usage guide playlist
 
-TODO
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=bf7LO5T5jHON_0wH&amp;list=PL9RL1sP7V5kYQ_gtJaBacAklts1p_lIk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
