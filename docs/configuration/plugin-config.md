@@ -56,13 +56,7 @@ bWriteToDiskCompressed=True
 
 ## Overriding environment variables
 
-In case your setup requires overwrites of certain configuration values for different build types, you can use UAT ini-overrides.
-
-Overrides take the form of `-ini:Engine:[SettingsKey]:Variable=Value`. So for example to overwrite the `CapsaEnvironmentKey`:
-
-```ps1
-.\Path\To\RunUAT.bat BuildCookRun <BuildArgs> -ini:Engine:[/Script/CapsaCore.CapsaSettings]:CapsaEnvironmentKey=<YourEnvironmentKey>
-```
+In case your setup requires overwrites of certain configuration values for different build types, please see [Unreal Engine Plugin](../getting-started/unreal-engine-plugin.md#overriding-environment-variables)
 
 ## Enabling verbose logging
 
