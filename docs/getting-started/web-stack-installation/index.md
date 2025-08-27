@@ -19,7 +19,7 @@ The Capsa documentation covers three different routes:
 These can be found in the sidebar.
 
 :::tip Got stuck?
-If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
+If you got stuck deploying Capsa, feel free to reach out to [capsa@lucianonooijen.com](mailto:capsa@lucianonooijen.com) for support. We are happy to help you getting Capsa up and running!
 :::
 
 ## Prerequisites

@@ -27,7 +27,7 @@ The Unreal Engine plugin installation is very straight-forward: you add and enab
 To read the guide on setting up the Unreal Engine plugin, see [Installing Unreal Engine plugin](./unreal-engine-plugin.md).
 
 :::tip Need a helping hand?
-If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support. We are happy to help you getting Capsa up and running!
+If you got stuck deploying Capsa, feel free to reach out to [capsa@lucianonooijen.com](mailto:capsa@lucianonooijen.com) for support. We are happy to help you getting Capsa up and running!
 :::
 
 ## Setup and usage guide playlist

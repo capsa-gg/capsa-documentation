@@ -7,7 +7,7 @@ tags: [development]
 
 Let's start by saying that Unreal Engine is a great tool that can be used to build great games, from indie to AAA. No wonder it's so widely used for such a wide variety of games (as well as for television and movies, it's even used by some government agencies).
 
-With Companion Group, our focus is on the multiplayer/online aspects of game development. And although Unreal Engine is great to work with, we have noticed a few shortcomings in tooling.
+With our dayjobs, our focus is on the multiplayer/online aspects of game development. And although Unreal Engine is great to work with, we have noticed a few shortcomings in tooling.
 
 One of these shortcomings has to do with logging. Collaborating effectively on bugs or issues arising duing playtests can be a very big challenge. The most common way to address these issues is to share log files in chats or in project management software. The larger a team is, the greater these challenges are.
 
@@ -23,7 +23,7 @@ With most types of software development, logging tools are readily available but
 
 ## Building Capsa
 
-With the knowledge that we at Companion Group need a solution for this and that it can improve the workflows of other teams as well, we decided to build something ourselves. With several Companion Group engineers having experience in web development, it was a great fit to build a solution like this.
+With the knowledge that we with our dayjobs need a solution for this and that it can improve the workflows of other teams as well, we decided to build something ourselves. With several of our colleages having experience in web development, it was a great fit to build a solution like this.
 
 Capsa is this solution. So in short, Capsa is a result of "scratching our own itch".
 

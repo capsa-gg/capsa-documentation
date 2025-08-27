@@ -90,10 +90,10 @@ const config: Config = {
         {
           title: "Maintainers",
           items: [
-            {
-              label: "Companion Group",
-              href: "https://companiongroup.io",
-            },
+            // {
+            //   label: "Companion Group",
+            //   href: "https://companiongroup.io",
+            // },
             {
               label: "Luciano Nooijen",
               href: "https://lucianonooijen.com",
@@ -127,7 +127,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} capsa.gg by Companion Group Ltd.`,
+      copyright: `Copyright © ${new Date().getFullYear()} capsa.gg`,
     },
     prism: {
       theme: prismThemes.github,

@@ -69,7 +69,7 @@ We've built Capsa in a way to make it as easy as possible to set up. All you nee
 If you are using Unreal Engine and have a server to host the Capsa web stack on with permissions to add a few DNS records, you have all you need to get started with Capsa.
 
 :::tip Need a helping hand?
-If you got stuck deploying Capsa, feel free to reach out to [luciano@companiongroup.io](mailto:luciano@companiongroup.io) for support.
+If you got stuck deploying Capsa, feel free to reach out to [capsa@lucianonooijen.com](mailto:capsa@lucianonooijen.com) for support.
 
 We are happy to help you getting Capsa up and running!
 :::

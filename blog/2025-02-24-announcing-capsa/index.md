@@ -42,6 +42,6 @@ Capsa v0.1 is now available. We’d love your feedback—whether you’ve tried 
 - **Docs & Setup**: [capsa.gg](https://capsa.gg/docs/getting-started/)
 - **GitHub**: [github.com/capsa-gg](https://github.com/capsa-gg)
 - **Video guides for setup**: [YouTube Playlist](https://youtube.com/playlist?list=PL9RL1sP7V5kYQ_gtJaBacAklts1p_lIk_&si=kUWiI_kyQZfWGIkJ)
-- **Feedback & Questions**: [luciano@companiongroup.io](mailto:luciano@companiongroup.io)
+- **Feedback & Questions**: [capsa@lucianonooijen.com](mailto:capsa@lucianonooijen.com)
 
 If this sounds useful, give the repo a ⭐ on GitHub and let us know what you think!
