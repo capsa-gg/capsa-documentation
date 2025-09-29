@@ -11,6 +11,8 @@ Working with Unreal Engine logs has always been a challenge for developers, espe
 
 Capsa is an open-source cloud logging solution built to seamlessly integrate with Unreal Engine. It automatically collects logs from your game and makes them accessible in a structured, searchable, and shareable way. No more digging through local log files; just open your browser and get the insights you need.
 
+As if today, a pre-alpha version of Capsa is available for testing by early adopters during their development process.
+
 <!-- truncate -->
 
 To read more about why we built Capsa, read [Why we built Capsa](../2025-02-15-why-we-built-capsa/index.md).
@@ -38,6 +40,8 @@ Capsa extends rather than replaces Unreal Engine functionality so you don't have
 ## Try Capsa Today
 
 Capsa v0.1 is now available. We’d love your feedback—whether you’ve tried it or just have thoughts on the concept.
+
+Though Capsa has been tested in several large Unreal Engine codebases, it is still in pre-alpha. So be cautious using Capsa in production or at scale.
 
 - **Docs & Setup**: [capsa.gg](https://capsa.gg/docs/getting-started/)
 - **GitHub**: [github.com/capsa-gg](https://github.com/capsa-gg)

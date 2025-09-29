@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+:::warning Capsa is still in active development
+Capsa is currently pre-alpha, still in development and not yet stable, breaking changes might occur before v1.0 is released. Though Capsa has already been tested with large Unreal Engine projects, bugs might occur and no official support is offered. Capsa is usable for early adopters, but be cautious with use in production.
+:::
+
 # Capsa
 
 > **capsa** _f_ (_genitive_ capsae); first declension
