@@ -2,10 +2,6 @@
 sidebar_position: 1
 ---
 
-:::warning Capsa is still in active development
-Capsa is currently pre-alpha, still in development and not yet stable, breaking changes might occur before v1.0 is released. Though Capsa has already been tested with large Unreal Engine projects, bugs might occur and no official support is offered. Capsa is usable for early adopters, but be cautious with use in production.
-:::
-
 # Capsa
 
 > **capsa** _f_ (_genitive_ capsae); first declension
@@ -19,6 +15,11 @@ _From [Wikitionary](https://en.wiktionary.org/wiki/capsa#Latin)_
 Let's discover **Capsa in less than 5 minutes**.
 
 When you're ready to get started, you can check out **[installing Capsa for your project](./getting-started/index.md)**.
+
+:::warning Capsa is still in active development
+Capsa is currently pre-alpha, still in development and not yet stable, breaking changes might occur before v1.0 is released. Though Capsa has already been tested with large Unreal Engine projects, bugs might occur and no official support is offered. Capsa is usable for early adopters, but be cautious with use in production.
+:::
+
 
 ## TL;DR:
 
